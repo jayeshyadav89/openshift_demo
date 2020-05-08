@@ -9,9 +9,9 @@ public class HomeController {
 
 	@GetMapping("/")
 	public String welcomeMsg() {
-		return "This is home controller.";
+		return "This is home controller, After configuring web-hook 1.";
 	}
-
+	
 	@GetMapping("/{input}")
 	public String withPathVariable(@PathVariable String input) {
 		return "The path variable passed is :"+input;
