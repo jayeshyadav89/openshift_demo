@@ -9,9 +9,9 @@ public class HomeController {
 
 	@GetMapping("/")
 	public String welcomeMsg() {
-		return "Welcome Sneha Darling...!!!";
+		return "This is home controller.";
 	}
-	
+
 	@GetMapping("/{input}")
 	public String withPathVariable(@PathVariable String input) {
 		return "The path variable passed is :"+input;
